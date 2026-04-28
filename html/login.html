@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IslandLink SDMS | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">I</div>
+        <h1>IslandLink SDMS</h1>
+        <p class="subtitle">Sign in to access the distribution portal</p>
+
+        <form action="../php/login.php" method="POST" class="login-card">
+
+            <p class="label">Select User Role</p>
+
+            <div class="roles">
+                <label class="role active">
+                    <input type="radio" name="role" value="retailer" checked>
+                    Retailer
+                </label>
+                <label class="role">
+                    <input type="radio" name="role" value="staff">
+                    Staff
+                </label>
+                <label class="role">
+                    <input type="radio" name="role" value="driver">
+                    Driver
+                </label>
+                <label class="role">
+                    <input type="radio" name="role" value="admin">
+                    Admin
+                </label>
+            </div>
+
+            <p class="role-desc">Place orders & track deliveries</p>
+
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="demo@islandlink.com" required>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="password123" required>
+
+            <button type="submit">Sign In →</button>
+
+            <p class="signup-link">
+                Not a user?
+                <a href="../html/register.html">Sign up</a>
+            </p>
+
+
+            <div class="footer">
+                <span>Protected System</span>
+                <p>Authorized personnel only. All activities are monitored.</p>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

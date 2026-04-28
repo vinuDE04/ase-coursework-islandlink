@@ -1,0 +1,220 @@
+/* ---------- RESET & BASE ---------- */
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background: #f5f7fb;
+}
+
+/* ---------- LAYOUT ---------- */
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+    width: 220px;
+    background: #fff;
+    padding: 20px;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    color: #2563eb;
+    font-size: 24px;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 12px;
+    color: #374151;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+/* ---------- MAIN ---------- */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- TOPBAR ---------- */
+.topbar {
+
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 5px 25px;
+    border-bottom: 1px solid #e5e7eb;
+    width: 100%;
+}
+
+.topbar h2 {
+    color: #111827;
+}
+
+.topbar .user {
+    text-align: right;
+}
+
+.topbar .user strong {
+    display: block;
+}
+
+.topbar .user small {
+    color: #6b7280;
+}
+
+/* ---------- CONTENT ---------- */
+.content {
+    flex: 1;
+    padding: 30px;
+    width: 100%;
+}
+
+/* Subtitle under topbar */
+.subtitle {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* Search box */
+.search-box {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+/* Orders */
+.orders {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Order Card */
+.order-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    width: 100%;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-header strong {
+    font-size: 18px;
+    color: #111827;
+}
+
+.status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.status.delivered {
+    background: #4caf50;
+    color: #fff;
+}
+
+.status.pending {
+    background: #ff9800;
+    color: #fff;
+}
+
+.status.outfordelivery {
+    background: #2196f3;
+    color: #fff;
+}
+
+.order-items h4 {
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+.order-items p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.order-items small {
+    color: #6b7280;
+}
+
+.order-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+/* ---------- BUTTONS ---------- */
+.order-footer .btn {
+    text-decoration: none;
+    padding: 10px 20px;        /* bigger padding for wider button */
+    min-width: 110px;          /* ensures all buttons have same minimum width */
+    border-radius: 10px;       /* slightly more rounded for modern look */
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.2s ease-in-out; /* smooth hover effect */
+    margin-top: 5px;
+    margin-left: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.btn.confirm {
+    background: #16a34a;      
+}
+
+.btn.cancel {
+    background: #dc2626;      
+}
+
+.btn.view {
+    background: #2563eb;       
+}
+
+.order-footer .btn:hover {
+    opacity: 0.95;
+    transform: translateY(-2px);  /* subtle lift on hover */
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15); /* slightly bigger shadow */
+}
+
