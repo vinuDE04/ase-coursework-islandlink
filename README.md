@@ -52,4 +52,9 @@ http://localhost/ase/
 ## Academic Supervision
 This project was guided  by Nimesha Rajakaruna as part of undergraduate coursework.
 
-Git Hub Name - nimesharajakaruna1-beep
+Team members 
+1. Vinuji Disathma Abeywickrama, Student  ID - E231422
+2. Tashmila Ransilu, Student  ID - E204628
+3. G.K.W.Delgahapitiya, Student  ID - E220666
+
+Git Hub Name - @nimesharajakaruna1-beep
