@@ -50,7 +50,8 @@ http://localhost/ase/
 ---
 
 ## Academic Supervision
-This project was guided  by Nimesha Rajakaruna @nimesharajakaruna1-beep as part of undergraduate coursework.
+This project was guided  by Nimesha Rajakaruna **[Nimesha Rajakaruna](https://github.com/nimesharajakaruna1-beep)** as part of undergraduate coursework.
+
 
 Team members 
 1. Vinuji Disathma Abeywickrama, Student  ID - E231422
